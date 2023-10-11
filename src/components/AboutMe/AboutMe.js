@@ -13,7 +13,7 @@ function AboutMe() {
           <p className="about-me__text">Я родился в городе Выкса, в 18 лет переехал в Москву, где закончил Российский технолигический университет МИРЭА. Я люблю слушать музыку и заниматься спортом. С 2021 года работаю в компании «КРОК».</p> 
           <a href="https://github.com/DaRazin" className="about-me__git">GitHub</a>
         </div>
-        <img src={ me } className="about-me__info_block_photo" />
+        <img src={ me } className="about-me__info_block_photo" alt="Фото"/>
       </div>
     </section>
   )

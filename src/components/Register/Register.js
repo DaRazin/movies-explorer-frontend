@@ -26,16 +26,16 @@ function Register() {
 
   return (
     <section className="register">
-      <img className="register__logo" src={logo} />
+      <img className="register__logo" src={logo} alt="Логотип"/>
       <h1 className="register__title">Добро пожаловать!</h1>
       <form className="register__form">
         <label className="register__label">
           <p className="register__placeholder">Имя</p>
-          <input className="register__input" type="text" name="name" minLength="2" maxLength="40" value={ name || "" } onChange={handleChangeName} required ></input>
+          <input className="register__input" type="text" name="name" minLength="2" maxLength="40" value={ name || "" } onChange={handleChangeName} required placeholder="Имя"></input>
         </label>
         <label className="register__label">
           <p className="register__placeholder">E-mail</p>
-          <input className="register__input" type="text" name="email" minLength="2" maxLength="40" value={ email || "" } onChange={handleChangeEmail} required ></input>
+          <input className="register__input" type="text" name="email" minLength="2" maxLength="40" value={ email || "" } onChange={handleChangeEmail} required placeholder="E-mail"></input>
         </label>
         <label className="register__label">
           <p className="register__placeholder">Пароль</p>

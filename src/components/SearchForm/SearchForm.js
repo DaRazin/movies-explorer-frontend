@@ -9,7 +9,7 @@ function SearchForm() {
         <input className="search__input" type="search" autoComplete="off" placeholder="Фильм"/>
         <button className="search__button" type="submit">
           <div className="search__button-inside">
-            <img className="search__button-image" src={imageButton} />
+            <img className="search__button-image" src={imageButton} alt="Кнопка поиска"/>
           </div>
         </button>
         </form>

@@ -25,7 +25,9 @@ function Header (props) {
 
   return (
   <header className="header">
-    <img src={ logo } className="header__logo" alt="Логотип" />
+		<Link to="/">
+			<img src={ logo } className="header__logo" alt="Логотип" />
+		</Link>
 		<div className={props.isLoggedIn ? 'header__hidden-navigate' :'header__nav_type_disable'}>
 			<button className="header__navigate-button" onClick={ handleMenuOpen }></button>
 			<div className={`header__popup ${isMenuOpen ? "header__popup_show" : "header__popup_close"}`}>

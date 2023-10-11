@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./MoviesCard.css";
 import film from "../../images/film.jpg"
-import { Route } from "react-router-dom";
 
 function MoviesCard() {
   const [isSaved, setIsSaved] = useState(false);
@@ -15,9 +14,9 @@ function MoviesCard() {
 
   return (
     <section className="card">
-      <img className="card__image" src={film} />
-      <button className={`${ location.pathname == "/saved-movies" ? 'card__button-delete' : 'card__button-disabled' }`}></button>
-      <button className={`${(isSaved || location.pathname == "/saved-movies") ? 'card__button-disabled' : 'card__button-save'}`} type="button" onClick={ handleClickSaved }>Сохранить</button>
+      <img className="card__image" src={film} alt="Обложка фильма"/>
+      <button className={`${ location.pathname === "/saved-movies" ? 'card__button-delete' : 'card__button-disabled' }`}></button>
+      <button className={`${(isSaved || location.pathname === "/saved-movies") ? 'card__button-disabled' : 'card__button-save'}`} type="button" onClick={ handleClickSaved }>Сохранить</button>
       <div className={`${isSaved ? 'card__icon-saved' : 'card__icon-saved-disabled'}`}></div>
       <div className="card__info">
         <h1 className="card__title">Название фильма</h1>

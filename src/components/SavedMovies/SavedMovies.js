@@ -2,7 +2,6 @@ import Header from "../Header/Header";
 import SearchForm from "../SearchForm/SearchForm";
 import MoviesCard from "../MoviesCard/MoviesCard";
 import Footer from "../Footer/Footer";
-import Movies from "../Movies/Movies";
 import "./SavedMovies.css"
 
 function SavedMovies(props) {

@@ -19,12 +19,12 @@ function Login() {
   }
   return (
     <section className="login">
-      <img className="login__logo" src={logo} />
+      <img className="login__logo" src={logo} alt="Логотип"/>
       <h1 className="login__title">Рады видеть!</h1>
       <form className="login__form">
         <label className="login__label">
           <p className="login__placeholder">E-mail</p>
-          <input className="login__input" type="text" name="email" minLength="2" maxLength="40" value={ email || "" } onChange={handleChangeEmail} required ></input>
+          <input className="login__input" type="text" name="email" minLength="2" maxLength="40" value={ email || "" } onChange={handleChangeEmail} required placeholder="E-mail"></input>
         </label>
         <label className="login__label">
           <p className="login__placeholder">Пароль</p>

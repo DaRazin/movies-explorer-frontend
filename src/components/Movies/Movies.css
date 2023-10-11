@@ -1,0 +1,46 @@
+.movies {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.movies__more-button {
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+  border: 1px solid #424242;
+  border-radius: 6px;
+  width: 320px;
+  height: 36px;
+  margin: auto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.movies__more-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1279px) {
+  .movies {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .movies {
+    margin-top: 40px;
+  }
+
+  .movies__more-button {
+    width: 240px;
+    margin-bottom: 80px;
+  }
+}

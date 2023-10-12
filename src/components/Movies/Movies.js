@@ -6,17 +6,19 @@ import "./Movies.css"
 
 function Movies(props) {
   return(
-    <main className="main">
-      <Header 
-				isLoggedIn = { props.isLoggedIn }
-			/>
-      <SearchForm />
-      <section className="movies">
-        <MoviesCardList />
-        <button className="movies__more-button">Ещё</button>
-      </section>
+    <>
+      <main className="main">
+        <Header 
+          isLoggedIn = { props.isLoggedIn }
+        />
+        <SearchForm />
+        <section className="movies">
+          <MoviesCardList />
+          <button className="movies__more-button">Ещё</button>
+        </section>
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }
 

@@ -34,6 +34,11 @@
   left: 70px;
 }
 
+.header__logo:hover {
+	opacity: 0.8;
+  cursor: pointer;
+}
+
 .header__nav_type_authorization {
 	position: absolute;
 	top: 21px;
@@ -295,6 +300,11 @@
 	}
 
 	.header__navigate-button {
+		width: 40px;
+		height: 43px;
+		background-size: 90%;
+		background-position: center;
+		background-repeat: no-repeat;
 		right: 14px;
 	}
 
@@ -305,5 +315,6 @@
 	.header__hidden-nav_button_account {
 		margin-bottom: 46px;
 	}
+
 }
 

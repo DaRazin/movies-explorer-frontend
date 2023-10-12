@@ -1,6 +1,5 @@
 .register {
-  height: 100vh;
-  margin: 0 auto 0;
+  margin: 70px auto 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -13,6 +12,11 @@
   padding: 0;
   width: 38px;
   height: 38px;
+}
+
+.register__logo:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .register__title {
@@ -32,6 +36,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+  margin-bottom: 70px;
 }
 
 .register__label{
@@ -151,8 +156,20 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1289px) {
+  .register {
+    margin-top: 232px;
+  }
+
+  .register__form {
+    margin-bottom: 232px;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
 	.register {
+    margin-top: 56px;
     width: 260px;
   }
 
@@ -167,12 +184,15 @@
 
   .register__form {
     margin-top: 80px;
+    margin-bottom: 30px;
   }
 
   .register__button {
     width: 260px;
     height: 45px;
     margin-top: 177px;
+    font-size: 12px;
+    line-height: 15px;
   }
 
   .register__link-block {

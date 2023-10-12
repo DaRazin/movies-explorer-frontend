@@ -1,6 +1,5 @@
 .login {
-  height: 100vh;
-  margin: 0 auto 0;
+  margin: 70px auto 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -13,6 +12,11 @@
   padding: 0;
   width: 38px;
   height: 38px;
+}
+
+.login__logo:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .login__title {
@@ -32,6 +36,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+  margin-bottom: 70px;
 }
 
 .login__label{
@@ -151,9 +156,20 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1279px) {
+  .login {
+    margin-top: 232px;
+  }
+
+  .login__form {
+    margin-bottom: 232px;
+  }
+
+}
+
 @media screen and (max-width: 767px) {
 	.login {
-    padding-top: 25px;
+    margin-top: 56px;
     width: 260px;
     box-sizing: border-box;
   }
@@ -169,6 +185,7 @@
 
   .login__form {
     margin-top: 80px;
+    margin-bottom: 30px;
   }
 
   .login__button {

@@ -26,7 +26,9 @@ function Register() {
 
   return (
     <section className="register">
-      <img className="register__logo" src={logo} alt="Логотип"/>
+      <Link to="/">
+        <img src={ logo } className="header__logo" alt="Логотип" />
+      </Link>
       <h1 className="register__title">Добро пожаловать!</h1>
       <form className="register__form">
         <label className="register__label">

@@ -93,6 +93,10 @@
   margin-top: 31px;
 }
 
+.search__switch-input:hover {
+  cursor: pointer;
+}
+
 .search__switch-input{
   position: relative;
   width: 34px;

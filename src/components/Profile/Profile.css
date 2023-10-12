@@ -1,5 +1,4 @@
 .profile {
-  height: calc(100vh - 74px - 74px);
   margin: 74px auto 0;
   padding: 0;
   display: flex;
@@ -9,6 +8,8 @@
 }
 
 .profile__title {
+  margin: 0;
+  padding: 0;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -82,23 +83,32 @@
 .profile__button_logout {
   margin: 16px auto 70px;
   color: #EE3465;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1279px) {
+  .profile {
+    margin-top: 0;
+  }
+
   .profile__title {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: white;
+    margin-top: 236px;
     margin-bottom: 80px;
+  }
+
+  .profile__button_edit {
+    margin-top: 195px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .profile {
     width: 260px;
-    height: calc(100vh);
-    margin: 0 auto 0;
+    margin: 70px auto 0;
   }
 
   .profile__input-block {
@@ -109,11 +119,12 @@
   }
 
   .profile__title {
-    margin-top: 25px;
+    margin-top: 0;
     margin-bottom: 64px;
   }
 
   .profile__button_edit {
     margin: 362px auto 0;
   }
+
 }

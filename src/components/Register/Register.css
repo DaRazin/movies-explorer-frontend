@@ -173,6 +173,10 @@
     width: 260px;
   }
 
+  .register__wrapper-logo{
+    margin: auto;
+  }
+
   .register__logo {
     margin: 0 auto 0;
   }

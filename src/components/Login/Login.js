@@ -19,8 +19,8 @@ function Login() {
   }
   return (
     <section className="login">
-      <Link to="/">
-        <img src={ logo } className="header__logo" alt="Логотип" />
+      <Link to="/" className="login__wrapper-logo">
+        <img src={ logo } className="login__logo" alt="Логотип" />
       </Link>
       <h1 className="login__title">Рады видеть!</h1>
       <form className="login__form">

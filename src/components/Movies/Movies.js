@@ -7,10 +7,10 @@ import "./Movies.css"
 function Movies(props) {
   return(
     <>
+      <Header 
+        isLoggedIn = { props.isLoggedIn }
+      />
       <main className="main">
-        <Header 
-          isLoggedIn = { props.isLoggedIn }
-        />
         <SearchForm />
         <section className="movies">
           <MoviesCardList />

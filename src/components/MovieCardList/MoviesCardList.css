@@ -10,7 +10,13 @@
   margin: 0px auto 75px;
   box-sizing: border-box;
 }
-
+.card-list-more {
+  display: flex;
+  justify-content: center;
+}
+.card-list-no {
+  color: white;
+}
 @media screen and (max-width: 1279px) {
 	.card-list {
     max-width: calc(100% - 60px);

@@ -18,7 +18,6 @@ function Header (props) {
 
 	function handleMenuClose() {
 		setIsMenuOpen(false);
-		console.log(setIsMenuOpen);
 	}
 
 	const location = useLocation();

@@ -1,14 +1,10 @@
 .saved-movies {
   margin: 0;
   padding: 0;
-  display: grid;
-  max-width: calc(100% - 140px);
-  grid-template-columns: repeat(auto-fit, minmax(360px, 360px));
-  grid-template-rows: auto;
-  column-gap: 30px;
-  row-gap: 59px;
-  margin: 70px auto 70px;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
 }
 
 @media screen and (max-width: 1279px) {

@@ -1,0 +1,320 @@
+@keyframes fadeIn {
+  0% {
+    width: 0;
+  }
+
+	50% {
+		width: 50%;
+	}
+
+  100% {
+    visibility: visible;
+    width: 100%;
+  }
+}
+
+.header {
+  position: relative;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 74px;
+  box-sizing: border-box;
+  margin: 0px auto 0px;
+  padding: 0;
+}
+
+.header__logo {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  top: 18px;
+  left: 70px;
+}
+
+.header__logo:hover {
+	opacity: 0.8;
+  cursor: pointer;
+}
+
+.header__nav_type_authorization {
+	position: absolute;
+	top: 21px;
+	right: 70px;
+}
+
+.header__nav_type_disable {
+	display: none;
+}
+
+.header__nav_button_sign-in {
+	width: 76px;
+	height: 32px;
+	background-color: #3DDC84;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	color: black;
+}
+
+.header__nav_link:hover {
+	opacity: 0.7;
+}
+
+.header__nav_button:hover {
+	opacity: 0.8;
+}
+
+.header__nav_link_sign-up {
+	margin-right: 30px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	color: white;
+	text-decoration: none;
+}
+
+.header__nav_type_isloggedin {
+	display: block;
+}
+
+.header__movies-nav {
+	width: 211px;
+	display: flex;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	color: white;
+}
+
+.header__nav_link_movies {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	color: white;
+	text-decoration: none;
+}
+
+.header__nav_link_movies:first-child {
+	margin-right: 16px;
+}
+
+.header__nav_button_account {
+	position: absolute;
+	top: 21px;
+	right: 70px;
+	width: 100px;
+	height: 32px;
+	background-color: #313131;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 16px;
+	color: white;
+}
+
+.header__navigate-button {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	width: 44px;
+	height: 44px;
+	text-decoration: none;
+	background-color: transparent;
+	background-image: url("../../images/icon__menu.svg");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: none;
+}
+
+.header__navigate-button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.header__popup {
+	position: fixed;
+  display: flex;
+  overflow: auto;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .3);
+	z-index: 1;
+	transition: 0.4s;
+	transform-origin: right;
+	transform: scaleX(0);
+	opacity: 0;
+}
+
+.header__popup_close {
+	visibility: hidden;
+}
+
+.header__popup_show {
+	visibility: visible;
+	transform: scaleX(1);
+	opacity: 1;
+}
+
+.header__popup-navigate {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	width: 67.7%;
+	height: 100vh;
+	background-color: #202020;
+}
+
+.header__hidden-navigate {
+	display: none;
+}
+
+.header__close-button {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 22.5px;
+	right: 22.5px;
+	width: 22px;
+	height: 22px;
+	background-color: transparent;
+	border: none;
+	background-image: url("../../images/close-button.svg");
+	background-size: cover;
+}
+
+.header__close-button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.header__hideden-nav_type_disable {
+	display: none;
+}
+
+.header__hideden-nav_type_authorization {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 159px;
+}
+
+.header__hidden-nav_link {
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 28px;
+	color: white;
+	text-decoration: none;
+	padding-bottom: 4px;
+}
+
+.header__hidden-nav_link:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.header__hidden-nav_link_current {
+	border-bottom: 2px solid white;
+}
+
+.header__hidden-nav_button_account {
+	width: 100px;
+	height: 32px;
+	background-color: #313131;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 16px;
+	color: white;
+	margin-bottom: 90px;
+}
+
+@media screen and (max-width: 1279px) {
+	.header__logo {
+		top: 18px;
+		left: 30px;
+	}
+
+	.header__nav_type_authorization {
+		right: 30px;
+	}
+
+	.header__nav_type_isloggedin {
+		display: none;
+	}
+
+	.header__hidden-navigate {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.header__logo {
+		left: 14px;
+	}
+
+	.header__nav_type_authorization {
+		right: 14px;
+	}
+
+	.header__nav_link_sign-up {
+		margin-right: 14px;
+		font-size: 10px;
+	}
+
+	.header__nav_button_sign-in {
+		width: 54px;
+		height: 26px;
+		font-size: 10px;
+	}
+
+	.header__navigate-button {
+		width: 40px;
+		height: 43px;
+		background-size: 90%;
+		background-position: center;
+		background-repeat: no-repeat;
+		right: 14px;
+	}
+
+	.header__popup-navigate {
+		width: 100%;
+	}
+
+	.header__hidden-nav_button_account {
+		margin-bottom: 46px;
+	}
+
+}
+
